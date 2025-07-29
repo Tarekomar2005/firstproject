@@ -4,3 +4,15 @@
      height: 3px;
       background-color: rgb(44, 62, 80);
 }
+.formgroup{
+      position: relative;
+}
+.custom-label {
+  position: absolute;
+  left: 10px;
+  top: -20px;
+  color: #7c3131;
+  transition: 0.2s;
+  padding: 0 5px;
+  pointer-events: none;
+}

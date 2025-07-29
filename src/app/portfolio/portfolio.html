@@ -8,52 +8,74 @@
 
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
-                <div class="portfolio-card teal-bg position-relative">
+               <div class="portfolio-card teal-bg position-relative">
                     <img src="imgs/poert1.png" alt="Plus" class="portfolio-icon w-100">
-                   <div class="layer d-flex justify-content-center align-items-center">
-                        <span><i class="fa-solid fa-plus"></i></span>
-                      </div>
-                </div>
+                    <div class="layer d-flex justify-content-center align-items-center">
+                      <span data-bs-toggle="modal" data-bs-target="#imageModal" (click)="setImage('imgs/poert1.png')">
+                        <i class="fa-solid fa-plus text-white fs-2"></i>
+                      </span>
+                    </div>
+                  </div>
             </div>
             <div class="col">
-                <div class="portfolio-card cyan-bg position-relative">
-                <img src="imgs/port2.png" alt="Plus" class="portfolio-icon w-100"> 
-                 <div class="layer d-flex justify-content-center align-items-center">
-                        <span><i class="fa-solid fa-plus"></i></span>
-                      </div>
-                </div>
+               <div class="portfolio-card teal-bg position-relative">
+                    <img src="imgs/port2.png" alt="Plus" class="portfolio-icon w-100">
+                    <div class="layer d-flex justify-content-center align-items-center">
+                      <span data-bs-toggle="modal" data-bs-target="#imageModal" (click)="setImage('imgs/port2.png')">
+                        <i class="fa-solid fa-plus text-white fs-2"></i>
+                      </span>
+                    </div>
+                  </div>
              </div>
             <div class="col">
-                <div class="portfolio-card black-bg position-relative">
-                    <img src="imgs/port3.png" alt="Tent" class="portfolio-icon w-100">
-                      <div class="layer d-flex justify-content-center align-items-center">
-                        <span><i class="fa-solid fa-plus"></i></span>
-                      </div>
-                </div>
+               <div class="portfolio-card teal-bg position-relative">
+                    <img src="imgs/port3.png" alt="Plus" class="portfolio-icon w-100">
+                    <div class="layer d-flex justify-content-center align-items-center">
+                      <span data-bs-toggle="modal" data-bs-target="#imageModal" (click)="setImage('imgs/port3.png')">
+                        <i class="fa-solid fa-plus text-white fs-2"></i>
+                      </span>
+                    </div>
+                  </div>
             </div>
             <div class="col">
-                <div class="portfolio-card maroon-bg position-relative">
-                    <img src="imgs/port3.png" alt="House" class="portfolio-icon w-100">
-                      <div class="layer d-flex justify-content-center align-items-center">
-                        <span><i class="fa-solid fa-plus"></i></span>
-                      </div>
-                </div>
+                <div class="portfolio-card teal-bg position-relative">
+                    <img src="imgs/poert1.png" alt="Plus" class="portfolio-icon w-100">
+                    <div class="layer d-flex justify-content-center align-items-center">
+                      <span data-bs-toggle="modal" data-bs-target="#imageModal" (click)="setImage('imgs/poert1.png')">
+                        <i class="fa-solid fa-plus text-white fs-2"></i>
+                      </span>
+                    </div>
+                  </div>
             </div>
             <div class="col">
-                <div class="portfolio-card cyan-bg position-relative">
-                    <img src="imgs/poert1.png" alt="Cake" class="portfolio-icon w-100 ">
-                     <div class="layer d-flex justify-content-center align-items-center">
-                        <span><i class="fa-solid fa-plus"></i></span>
-                      </div>
-                </div>
+                <div class="portfolio-card teal-bg position-relative">
+                    <img src="imgs/port2.png" alt="Plus" class="portfolio-icon w-100">
+                    <div class="layer d-flex justify-content-center align-items-center">
+                      <span data-bs-toggle="modal" data-bs-target="#imageModal" (click)="setImage('imgs/port2.png')">
+                        <i class="fa-solid fa-plus text-white fs-2"></i>
+                      </span>
+                    </div>
+                  </div>
             </div>
-            <div class="col">
-                <div class="portfolio-card black-bg position-relative">
-                    <img src="imgs/port2.png" alt="Tent" class="portfolio-icon w-100">
-                      <div class="layer d-flex justify-content-center align-items-center">
-                        <span><i class="fa-solid fa-plus"></i></span>
-                      </div>
-                </div>
-            </div>
+      <div class="col">
+                  <div class="portfolio-card teal-bg position-relative">
+                    <img src="imgs/port3.png" alt="Plus" class="portfolio-icon w-100">
+                    <div class="layer d-flex justify-content-center align-items-center">
+                      <span data-bs-toggle="modal" data-bs-target="#imageModal" (click)="setImage('imgs/port3.png')">
+                        <i class="fa-solid fa-plus text-white fs-2"></i>
+                      </span>
+                    </div>
+                  </div>
+  </div>
         </div>
     </div>
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark">
+      <div class="modal-body p-0">
+        <img [src]="selectedImage" class="w-100" alt="Expanded Image">
+      </div>
+    </div>
+  </div>
+</div>

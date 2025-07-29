@@ -1,4 +1,4 @@
-<section class="py-5 mb-3">
+<section class="py-5 mb-3 vh-100">
   <div class="container">
     <h2 class="fw-bold text-uppercase  text-center">Contact Section</h2>
 
@@ -8,30 +8,33 @@
         <div class="line ms-3" ></div>
         </div>
 
+
+        
+
     <div class="row justify-content-center">
       <div class="col-md-8">
         <form>
-          <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="userName" placeholder="userName">
-            <label for="userName">userName</label>
+          <div class="form-floating mb-3 formgroup m-5">
+            <input type="text" class="form-control" id="userName" required>
+            <label for="userName"  class="custom-label">userName</label>
           </div>
 
-          <div class="form-floating mb-3">
-            <input type="number" class="form-control" id="userAge" placeholder="userAge">
-            <label for="userAge">userAge</label>
+          <div class="form-floating mb-3 formgroup m-5">
+            <input type="number" class="form-control" id="userAge" required >
+            <label for="userAge"  class="custom-label">userAge</label>
           </div>
 
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="userEmail" placeholder="userEmail">
-            <label for="userEmail">userEmail</label>
+          <div class="form-floating mb-3 formgroup m-5">
+            <input type="email" class="form-control" id="userEmail" required >
+            <label for="userEmail"  class="custom-label">userEmail</label>
           </div>
 
-          <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="userPassword" placeholder="userPassword">
-            <label for="userPassword">userPassword</label>
+          <div class="form-floating mb-3 formgroup m-5">
+            <input type="password" class="form-control" id="userPassword" required>
+            <label for="userPassword"  class="custom-label">userPassword</label>
           </div>
 
-          <button type="submit" class="btn btn-success px-4">send Message</button>
+          <button type="submit" class="btn btn-success mx-5 m-3">send Message</button>
         </form>
       </div>
     </div>
